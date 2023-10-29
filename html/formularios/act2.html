@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Formulario de Búsqueda de Altavoces</h1>
+    <br>
+
+<form>
+  <label for="nombre"><strong>Nombre</strong></label><br>
+  <input type="text" id="nombre" name="nombre" required><br>
+  <br>
+
+  <label for="correo"><strong>Correo Electrónico</strong></label><br>
+  <input type="email" id="correo" name="correo" required><br>
+  <br>
+
+  <p><strong>Modelo</strong></p>
+  <input type="radio" id="R4" name="modelo" value="R4" required>
+  <label for="R4">R4</label><br>
+  <input type="radio" id="R5" name="modelo" value="R5">
+  <label for="R5">R5</label><br>
+  <input type="radio" id="SR1" name="modelo" value="SR1">
+  <label for="SR1">SR1</label><br>
+  <br>
+
+  <label for="potencia"><strong>Potencia máxima:</strong></label><br>
+  <input type="number" id="potencia" name="potencia" min="50" max="100" required><br>
+  <br>
+
+  <p><strong>Bluetooth</strong></p>
+  <input type="radio" id="Si" name="Bluetooth" value="Si" required>
+  <label for="Si">Si</label><br>
+  <input type="radio" id="No" name="Bluetooth" value="No">
+  <label for="No">No</label><br>
+  <br>
+
+  <label for="color"><strong>Color</strong></label><br>
+  <input type="color" id="color" name="color"><br>
+  <br>
+
+  <input type="submit" value="Enviar"><br>
+
+</body>
+</html>
