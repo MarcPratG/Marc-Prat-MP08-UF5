@@ -2,23 +2,75 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
     <title>Document</title>
 </head>
 <body>
-    <h1>Formulario de Registro</h1>
+    <header><h1>Bienvenidos a la Familia de Risas</h1></header>
+    <h2>Regístrate y Únete a la Diversión</h2>
+    <p>¡Estás a punto de entrar en el mundo de la diversión absoluta! En nuestra página, nos tomamos el humor muy en serio (aunque a veces no tanto). Únete a nuestra comunidad de bromistas y entusiastas de la risa registrándote a continuación.</p><br>
 
-    <form action="/submit_registration">
-        <label for="nombre">Nombre:</label><br>
+    <form>
+        <label for="nombre"><strong>1. Nombre de Usuario (tu apodo gracioso):</strong></label><br>
         <input type="text" id="nombre" name="nombre" required><br>
+        <br>
 
-        <label for="email">Correo Electrónico:</label><br>
-        <input type="email" id="email" name="email" required><br>
+        <label for="contraseña"><strong>2. Contraseña (asegúrate de que sea segura, ¡pero no demasiado seria!):</strong></label><br>
+        <input type="password" id="contraseña" name="contraseña" required><br>
+        <br>
 
-        <label for="password">Contraseña:</label><br>
-        <input type="password" id="password" name="password" required><br>
+        <label for="correo"><strong>3. Correo Electrónico (necesitamos un lugar para enviar chistes malos y memes graciosos):</strong></label><br>
+        <input type="email" id="correo" name="correo" required><br>
+        <br>
 
-        <input type="submit" value="Registrarse">
+        <label for="fecha"><strong>4. Fecha de Nacimiento (para celebrar tu día con un pastel virtual, ¡y averiguar si eres mayor de edad para chistes subidos de tono!):</strong></label><br>
+        <input type="date" id="fecha" name="fecha"><br>
+        <br>
+
+        <label for="foto"><strong>5. Foto de Perfil (asegúrate de que sea digna de un emoji de risa):</strong></label><br>
+        <input type="file" id="foto" name="foto"><br>
+        <br>
+
+        <p><strong>6. Género (opcional, ¡a menos que seas un unicornio):</strong></p>
+        <input type="radio" id="hombre" name="genero" value="hombre">
+        <label for="hombre">Hombre</label><br>
+        <input type="radio" id="mujer" name="genero" value="mujer">
+        <label for="mujer">Mujer</label><br>
+        <input type="radio" id="otro" name="genero" value="otro">
+        <label for="otro">Otro (especifica)</label>
+        <input type="text" id="especifica" name="especifica"><br>
+        <br>
+
+        <label for="superpoder"><strong>7. Superpoder más impresionante (porque todos los héroes tienen uno):</strong></label><br>
+        <textarea id="superpoder" name="superpoder" required></textarea><br>
+        <br>
+
+        <label for="color"><strong>8. Color Favorito (porque incluso los colores pueden ser divertidos):</strong></label><br>
+        <input type="color" id="color" name="color"><br>
+        <br>
+
+        <p><strong>9. ¿Eres más parecido a un pato o a un pingüino? (¡una pregunta existencial!):</strong></p>
+        <input type="radio" id="Pat" name="parecido" value="Pat" required>
+        <label for="Pat">Patito</label><br>
+        <input type="radio" id="Pin" name="parecido" value="Pin">
+        <label for="Pin">Pingüino</label><br>
+        <br>
+
+        <label for="notas"><strong>10. Notas Adicionales (si tienes algún chiste que quieras compartir o alguna habilidad especial para hacer reír, cuéntanos):</strong></label><br>
+        <textarea id="notas" name="notas"></textarea><br>
+        <br>
+
+        <p><strong>Acepto los Términos y Condiciones (sí, sí, los que nadie lee):</strong></p>
+  
+        <input type="radio" id="si" name="acepto" value="si" required>
+        <label for="si">¡Por supuesto, acepto todo lo que venga con una sonrisa!</label><br>
+        <br>
+
+        <input type="submit" value="¡Hagámoslo!"><br>
+        <br>
+
+        <p></p>
     </form>
+    <footer>Gracias por unirte a la diversión. Tu registro nos ayudará a mantener la risa en circulación. ¡Recuerda, en esta página, siempre estamos buscando el lado humorístico de la vida!</footer>
 </body>
 </html>
