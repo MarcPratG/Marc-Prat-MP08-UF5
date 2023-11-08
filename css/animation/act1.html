@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        .sol {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            width: 100px;
+            height: 100px;
+            margin-top: -50px;
+            margin-left: -50px;
+            background-color: yellow;
+            border-radius: 50%;
+            z-index: 1;
+        }
+        .luna {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            width: 100px;
+            height: 100px;
+            margin-top: -50px;
+            margin-left: -50px;
+            background-color: gray;
+            border-radius: 50%;
+            z-index: 2;
+            animation: eclipse 5s infinite;
+        }
+        @keyframes eclipse {
+            0% { left: 40%; }
+            50% { left: 50%; }
+            100% { left: 40%; }
+        }
+    </style>
+
+</head>
+<body>
+    <div class="sol"></div>
+    <div class="luna"></div>
+</body>
+</html>
