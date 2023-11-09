@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        .mitad {
+            height: 50vh; /* vh significa "viewport height", por lo que 50vh es la mitad de la altura de la pantalla */
+            width: 100%;
+            position: relative; /* Esto permite que la imagen de la oveja se posicione en relación a este div */
+        }
+        .suelo {
+            background-image: url('/img/pared.jpg');
+            background-size: cover;
+        }
+        .pared {
+            background-image: url('/img/suelo.jpg');
+            background-size: cover;
+        }
+        .oveja {
+            position: absolute;
+            bottom: 0; /* Esto coloca la imagen de la oveja en la parte inferior del div */
+            left: 50%; /* Esto centra la imagen de la oveja en el div */
+            transform: translateX(-50%); /* Esto centra la imagen de la oveja en el div */
+            box-shadow: 10px 10px 5px grey; /* Esto aplica una sombra a la imagen de la oveja */
+        }
+    </style>
+
+</head>
+<body>
+    <div class="mitad suelo">
+        <img class="oveja" src="/img/oveja.svg" alt="Imagen de una oveja">
+    </div>
+    <div class="mitad pared"></div>
+</body>
+</html>
