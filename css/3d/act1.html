@@ -7,32 +7,33 @@
 
     <style>
         .mitad {
-            height: 50vh; /* vh significa "viewport height", por lo que 50vh es la mitad de la altura de la pantalla */
+            height: 50vh; 
             width: 100%;
-            position: relative; /* Esto permite que la imagen de la oveja se posicione en relación a este div */
+            position: relative; 
         }
         .suelo {
-            background-image: url('/img/pared.jpg');
+            background-image: url('/img/suelo.jpg');
             background-size: cover;
+            transform: skewX(-45deg);
         }
         .pared {
-            background-image: url('/img/suelo.jpg');
+            background-image: url('/img/pared.jpg');
             background-size: cover;
         }
         .oveja {
             position: absolute;
-            bottom: 0; /* Esto coloca la imagen de la oveja en la parte inferior del div */
-            left: 50%; /* Esto centra la imagen de la oveja en el div */
-            transform: translateX(-50%); /* Esto centra la imagen de la oveja en el div */
-            box-shadow: 10px 10px 5px grey; /* Esto aplica una sombra a la imagen de la oveja */
+            bottom: 0; 
+            left: 50%; 
+            transform: translateX(-50%); 
+            box-shadow: 10px 10px 5px grey;
         }
     </style>
 
 </head>
 <body>
-    <div class="mitad suelo">
+    <div class="mitad pared">
         <img class="oveja" src="/img/oveja.svg" alt="Imagen de una oveja">
     </div>
-    <div class="mitad pared"></div>
+    <div class="mitad suelo"></div>
 </body>
 </html>
