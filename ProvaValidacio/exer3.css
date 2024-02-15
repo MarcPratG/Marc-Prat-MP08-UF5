@@ -1,0 +1,49 @@
+#sidebar {
+    background-color: #ad8d5590;
+    color: #ffffff;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+#main {
+    background-color: #f8f88a;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+.style1 {
+    background-color: #ee5e47;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+.style2 {
+    background-color: #30aa58;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+.style3 {
+    background-color: #e2c610;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+.style4 {
+    background-color: #e20958;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+.logo {
+    color: #fa0202;
+}
+
+ul {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: #f8f9fa;
+    color: gray;
+}

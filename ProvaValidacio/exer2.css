@@ -1,0 +1,12 @@
+
+    div {
+        float: left;
+        background-color: rgb(24, 177, 108);
+        padding: 50px;
+    }
+
+    div {
+        float: right;
+        background-color: rgb(29, 177, 118);
+        padding: 50px;
+    }
