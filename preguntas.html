@@ -19,6 +19,9 @@
         }
 
         header, footer {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
             background-color: #1f4e84;
             color: #ffffff;
             padding: 20px;
@@ -33,18 +36,22 @@
         main {
             margin-left: 20px;
         }
+        .b {
+            color: #1d9cf1;
+        }
     </style>
 
 <body>
     <!-- Cabecera -->
     <header>
+        <img class="logo" src="imgsk/lmfr.png" height="80" alt="Logo">
         <h1>Brother's Studios</h1>
         <!-- Menú -->
     <nav>
         <ul>
-            <a href="index.html">Eclipsed Realms</a>
-            <a href="contacto.html">Contactanos</a>
-            <a href="sn.html">Sobre nosotros</a>
+            <a href="index.html"><span class="b">Eclipsed Realms</span></a>
+            <a href="contacto.html"><span class="b">Contactanos</span></a>
+            <a href="sn.html"><span class="b">Sobre nosotros</span></a>
         </ul>
     </nav>
     </header>
@@ -53,7 +60,7 @@
     <main>
         <h1><em>Preguntas recurrentes</em></h1>
     <div style="display: flex; align-items: flex-start;">
-        <img src="imgsk/er.jpg" alt="comida" height="500">
+        <img src="imgsk/er.jpg" alt="comida" height="600">
         <div style="margin-left: 20px;">
 
             <details>
@@ -124,9 +131,9 @@
         <p>&copy; 2024 Todos los derechos reservados.</p>
         <p>
             Síguenos en:
-            <a href="https://twitter.com/vegetta777">Twitter</a>
-            <a href="https://instagram.com/vegetta777">Instagram</a>
-            <a href="https://facebook.com/Vegetta777paginaoficial">Facebook</a>
+            <a href="https://twitter.com/vegetta777"><span class="b">Twitter</span></a>
+            <a href="https://instagram.com/vegetta777"><span class="b">Instagram</span></a>
+            <a href="https://facebook.com/Vegetta777paginaoficial"><span class="b">Facebook</span></a>
         </p>
     </footer>
 </body>
