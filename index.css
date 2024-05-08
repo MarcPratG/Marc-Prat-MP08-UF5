@@ -1,0 +1,97 @@
+/* Estilos Globales */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #2b2b2b;
+    color: #ffffff;
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+}
+
+.logo-container {
+    display: flex;
+    align-items: center;
+}
+
+.logo {
+    margin-right: 10px;
+}
+
+header, footer {
+    background-color: #1f4e84;
+    color: #ffffff;
+    padding: 20px;
+    background-image: url('imgsk/pai.jpg'); /* Agregar imagen de fondo al header */
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #ffffff;
+    transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: #1d9cf1;
+}
+
+/* Contenido Principal */
+main {
+    padding: 20px;
+}
+
+.content-section {
+    margin-bottom: 40px;
+}
+
+.content-section img {
+    display: block;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    max-width: 100%;
+    height: auto;
+}
+
+hr {
+    border: none;
+    border-top: 1px solid #ffffff;
+    margin: 20px 0;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+}
+
+footer a img {
+    width: 50px; 
+    height: auto; 
+}
+
+footer p {
+    margin: 5px;
+}
+
+footer a {
+    color: #1d9cf1;
+    text-decoration: none;
+    margin: 0 5px;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
