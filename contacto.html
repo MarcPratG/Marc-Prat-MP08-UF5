@@ -4,90 +4,60 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Brother's Studios | Contacto</title>
-</head>
-<head>
-    <title>Brother's Studios | Contacto</title>
     <link rel="icon" type="image/png" href="imgsk/lmfr.png">
     <link rel="stylesheet" type="text/css" href="styles.css">
+    <link rel="stylesheet" type="text/css" href="contacto.css">
 </head>
-
-    <!-- Modo Oscuro -->
-    <style>
-        body {
-            background-color: #2b2b2b;
-            color: #ffffff;
-            margin: 0;
-        }
-
-        header, footer {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            background-color: #1f4e84;
-            color: #ffffff;
-            padding: 20px;
-            background-image: url('imgsk/pai.jpg');
-        }
-
-        nav ul {
-            list-style-type: none; 
-            padding: 0; 
-        }
-
-        main {
-            margin-left: 20px;
-        }
-        .b {
-            color: #1d9cf1;
-        }
-    </style>
-
 <body>
     <!-- Cabecera -->
     <header>
-        <img class="logo" src="imgsk/lmfr.png" height="80" alt="Logo">
-        <h1>Brother's Studios</h1>
+        <div class="logo-container">
+            <img class="logo" src="imgsk/lmfr.png" alt="Logo">
+            <h1>Brother's Studios</h1>
+        </div>
         <!-- Menú -->
-    <nav>
-        <ul>
-            <a href="index.html"><span class="b">Eclipsed Realms</span></a>
-            <a href="preguntas.html"><span class="b">Preguntas recurrentes</span></a>
-            <a href="sn.html"><span class="b">Sobre nosotros</span></a>
-        </ul>
-    </nav>
+        <nav>
+            <ul>
+                <li><a href="index.html">Eclipsed Realms</a></li>
+                <li><a href="preguntas.html">Preguntas recurrentes</a></li>
+                <li><a href="sn.html">Sobre nosotros</a></li>
+            </ul>
+        </nav>
     </header>
 
     <!-- Contenido principal -->
     <main>
-        <h1>Contacto</h1><br>
-
-        <form>
-            <label for="nombre"><strong>Nombre</strong></label><br>
-            <input type="text" id="nombre" name="nombre" required><br>
-            <br>
-          
-            <label for="correo"><strong>Correo Electrónico</strong></label><br>
-            <input type="email" id="correo" name="correo" required><br>
-            <br>
-          
-            <label for="mensaje"><strong>Mensaje</strong></label><br>
-            <textarea id="mensaje" name="mensaje"></textarea><br>
-            <br>
-          
-            <input type="submit" value="Enviar">
+        <div class="contacto">
+            <h1>Contacto</h1>
+            <form>
+                <label for="motivo">Motivo de contacto<span>*</span></label><br>
+                <input type="text" id="motivo" name="motivo" required><br><br>
             
-          </form>
+                <label for="nombre">Nombre<span>*</span></label><br>
+                <input type="text" id="nombre" name="nombre" required><br><br>
+
+                <label for="correo">Correo Electrónico<span>*</span></label><br>
+                <input type="email" id="correo" name="correo" required><br><br>
+                
+                <label for="telefono">Teléfono</label><br>
+                <input type="tel" id="telefono" name="telefono"><br><br>
+            
+                <label for="mensaje">Mensaje<span>*</span></label><br>
+                <textarea id="mensaje" name="mensaje" required></textarea><br><br>
+            
+                <input type="submit" value="Enviar">
+            </form>
+        </div>
     </main>
-    <br><br><br><br><br><br><br><br><br><br><br><br>
+    
     <!-- Pie de página -->
     <footer>
-        <p>Propietario: Brother's Studios</p>
+        <p>Brother's Studios</p>
         <p>&copy; 2024 Todos los derechos reservados.</p>
         <p>
-            Síguenos en:
-            <a href="https://twitter.com/vegetta777"><span class="b">Twitter</span></a>
-            <a href="https://instagram.com/vegetta777"><span class="b">Instagram</span></a>
-            <a href="https://facebook.com/Vegetta777paginaoficial"><span class="b">Facebook</span></a>
+            <a href="https://twitter.com/vegetta777"><img src="imgsk/x.png" alt="X"></a>
+            <a href="https://instagram.com/vegetta777"><img src="imgsk/i.png" alt="Instagram"></a>
+            <a href="https://facebook.com/Vegetta777paginaoficial"><img src="imgsk/f.png" alt="Facebook"></a>
         </p>
     </footer>
 </body>
