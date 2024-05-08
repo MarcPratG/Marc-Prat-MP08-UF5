@@ -1,0 +1,99 @@
+/* Estilos Globales */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #2b2b2b;
+    color: #ffffff;
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+}
+
+.logo-container {
+    display: flex;
+    align-items: center;
+}
+
+.logo {
+    margin-right: 10px;
+}
+
+header, footer {
+    background-color: #1f4e84;
+    color: #ffffff;
+    padding: 20px;
+    background-image: url('imgsk/pai.jpg');
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #ffffff;
+    transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: #1d9cf1;
+}
+
+/* Contenido Principal */
+main {
+    padding: 20px;
+}
+
+.faq-container {
+    display: flex;
+    align-items: flex-start;
+}
+
+.faq-content {
+    margin-left: 20px;
+    flex-grow: 1;
+}
+
+.faq-content details {
+    margin-bottom: 20px;
+}
+
+.faq-content details summary {
+    cursor: pointer;
+}
+
+.faq-content details p {
+    margin-top: 10px;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    background-image: url('imgsk/pai.jpg');
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+
+footer p {
+    margin: 5px;
+}
+
+footer a {
+    margin: 0 5px;
+}
+
+footer a img {
+    width: 50px;
+    height: auto;
+}

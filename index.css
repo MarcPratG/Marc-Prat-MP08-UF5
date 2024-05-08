@@ -75,6 +75,7 @@ hr {
 /* Footer */
 footer {
     text-align: center;
+    background-position: center;
 }
 
 footer a img {
