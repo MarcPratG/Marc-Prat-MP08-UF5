@@ -1,10 +1,11 @@
 /* Estilos Globales */
 body {
-    font-family: Arial, sans-serif;
+    font-family: Georgia, serif; /* Cambiado a Georgia */
     margin: 0;
     padding: 0;
-    background-color: #1b2838; /* Cambiado para parecerse a BioWare */
-    color: #c7d5e0; /* Cambiado para parecerse a BioWare */
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('img/er.jpg');
+    background-size: cover;
+    color: #ffffff;
 }
 
 .container {
@@ -15,27 +16,40 @@ body {
 .logo-container {
     display: flex;
     align-items: center;
-    justify-content: center; /* Centrado horizontal para parecerse a BioWare */
+    justify-content: flex-start;
 }
 
 .logo {
-    margin-right: 10px;
     height: 100px;
 }
 
-header, footer {
-    background-color: #1b2838; /* Cambiado para parecerse a BioWare */
-    color: #c7d5e0; /* Cambiado para parecerse a BioWare */
+header {
+    background-color: rgba(0, 0, 0, 0.8);
+    color: #ffffff;
     padding: 20px;
-    background-image: url('imgsk/pai.jpg'); /* Agregar imagen de fondo al header */
+}
+
+header h1 {
+    font-size: 2em;
+    font-family: Verdana, sans-serif; /* Cambiado a Verdana */
+}
+
+footer {
+    background-color: #000000;
+    text-align: center;
+    color: #ffffff;
+    padding: 20px;
+}
+
+nav {
+    display: flex;
+    justify-content: flex-end;
 }
 
 nav ul {
     list-style-type: none;
     padding: 0;
     margin: 0;
-    display: flex; /* Cambiado para parecerse a BioWare */
-    justify-content: center; /* Centrado horizontal para parecerse a BioWare */
 }
 
 nav ul li {
@@ -45,47 +59,44 @@ nav ul li {
 
 nav ul li a {
     text-decoration: none;
-    color: #c7d5e0; /* Cambiado para parecerse a BioWare */
+    color: #ffffff;
     transition: color 0.3s ease;
+    font-size: 1.5em;
 }
 
 nav ul li a:hover {
-    color: #66c0f4; /* Cambiado para parecerse a BioWare */
+    color: #1d9cf1;
 }
 
 /* Contenido Principal */
 main {
-    padding: 20px;
-    display: flex; /* Cambiado para parecerse a BioWare */
-    flex-direction: column; /* Cambiado para parecerse a BioWare */
-    align-items: center; /* Centrado horizontal para parecerse a BioWare */
+    padding: 100px;
+    text-align: center;
 }
 
 .content-section {
     margin-bottom: 40px;
-    width: 60%; /* Cambiado para parecerse a BioWare */
 }
 
-.content-section img {
-    display: block;
-    margin-top: 20px;
-    margin-bottom: 20px;
-    max-width: 100%;
-    height: auto;
+.title {
+    font-size: 2em;
+    color: #b4a41d;
+    font-family: Verdana, sans-serif; /* Cambiado a Verdana */
+}
+
+.text {
+    font-size: 1.2em;
+    line-height: 1.5;
+    font-family: Georgia, serif; /* Cambiado a Georgia */
 }
 
 hr {
     border: none;
-    border-top: 1px solid #c7d5e0; /* Cambiado para parecerse a BioWare */
+    border-top: 1px solid #ffffff;
     margin: 20px 0;
 }
 
 /* Footer */
-footer {
-    text-align: center;
-    background-position: center;
-}
-
 footer a img {
     width: 50px; 
     height: auto; 
@@ -96,7 +107,7 @@ footer p {
 }
 
 footer a {
-    color: #66c0f4; /* Cambiado para parecerse a BioWare */
+    color: #1d9cf1;
     text-decoration: none;
     margin: 0 5px;
 }
