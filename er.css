@@ -1,9 +1,10 @@
 /* Estilos Globales */
 body {
-    font-family: Arial, sans-serif;
+    font-family: Georgia, serif;
     margin: 0;
     padding: 0;
-    background-color: #2b2b2b;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('img/bs.jpg');
+    background-size: cover;
     color: #ffffff;
 }
 
@@ -18,15 +19,23 @@ body {
 }
 
 .logo {
-    margin-right: 10px;
     height: 100px;
 }
 
-header, footer {
-    background-color: #1f4e84;
+header {
+    background-color: rgba(0, 0, 0, 0.8);
     color: #ffffff;
     padding: 20px;
-    background-image: url('imgsk/pai.jpg');
+}
+
+header h1 {
+    font-size: 2em;
+    font-family: Verdana, sans-serif;
+}
+
+nav {
+    display: flex;
+    justify-content: flex-end;
 }
 
 nav ul {
@@ -44,6 +53,7 @@ nav ul li a {
     text-decoration: none;
     color: #ffffff;
     transition: color 0.3s ease;
+    font-size: 1.5em;
 }
 
 nav ul li a:hover {
@@ -53,6 +63,12 @@ nav ul li a:hover {
 /* Contenido Principal */
 main {
     padding: 20px;
+}
+
+.title {
+    font-size: 2em;
+    color: #50aee9;
+    font-family: Verdana, sans-serif;
 }
 
 .faq-container {
@@ -77,13 +93,17 @@ main {
     margin-top: 10px;
 }
 
+.faq-container img {
+    width: 750px;
+    height: auto; 
+}
+
 /* Footer */
 footer {
+    background-color: #000000;
     text-align: center;
-    background-image: url('imgsk/pai.jpg');
-    background-size: cover;
-    background-position: center;
-    position: relative;
+    color: #ffffff;
+    padding: 20px;
 }
 
 footer p {
@@ -91,10 +111,16 @@ footer p {
 }
 
 footer a {
+    color: #1d9cf1;
+    text-decoration: none;
     margin: 0 5px;
 }
 
 footer a img {
-    width: 50px;
-    height: auto;
+    width: 50px; 
+    height: auto; 
+}
+
+footer a:hover {
+    text-decoration: underline;
 }

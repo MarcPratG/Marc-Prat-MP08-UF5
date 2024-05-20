@@ -1,6 +1,6 @@
 /* Estilos Globales */
 body {
-    font-family: Georgia, serif; /* Cambiado a Georgia */
+    font-family: Georgia, serif;
     margin: 0;
     padding: 0;
     background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('img/er.jpg');
@@ -30,7 +30,7 @@ header {
 
 header h1 {
     font-size: 2em;
-    font-family: Verdana, sans-serif; /* Cambiado a Verdana */
+    font-family: Verdana, sans-serif;
 }
 
 nav {
@@ -68,7 +68,7 @@ main {
 .title {
     font-size: 2em;
     color: #50aee9;
-    font-family: Verdana, sans-serif; /* Cambiado a Verdana */
+    font-family: Verdana, sans-serif;
 }
 
 .faq-container {
