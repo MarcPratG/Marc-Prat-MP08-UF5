@@ -1,9 +1,10 @@
 /* Estilos Globales */
 body {
-    font-family: Arial, sans-serif;
+    font-family: Georgia, serif; /* Cambiado a Georgia */
     margin: 0;
     padding: 0;
-    background-color: #2b2b2b;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('img/bs.jpg');
+    background-size: cover;
     color: #ffffff;
 }
 
@@ -15,18 +16,34 @@ body {
 .logo-container {
     display: flex;
     align-items: center;
+    justify-content: flex-start;
 }
 
 .logo {
-    margin-right: 10px;
     height: 100px;
 }
 
-header, footer {
-    background-color: #1f4e84;
+header {
+    background-color: rgba(0, 0, 0, 0.8);
     color: #ffffff;
     padding: 20px;
-    background-image: url('imgsk/pai.jpg');
+}
+
+header h1 {
+    font-size: 2em;
+    font-family: Verdana, sans-serif; /* Cambiado a Verdana */
+}
+
+footer {
+    background-color: #000000;
+    text-align: center;
+    color: #ffffff;
+    padding: 20px;
+}
+
+nav {
+    display: flex;
+    justify-content: flex-end;
 }
 
 nav ul {
@@ -44,6 +61,7 @@ nav ul li a {
     text-decoration: none;
     color: #ffffff;
     transition: color 0.3s ease;
+    font-size: 1.5em;
 }
 
 nav ul li a:hover {
@@ -52,17 +70,35 @@ nav ul li a:hover {
 
 /* Contenido Principal */
 main {
-    padding: 20px;
-    line-height: 1.8;
+    padding: 150px;
 }
 
-/* Pie de página */
-footer {
-    text-align: center;
-    background-image: url('imgsk/pai.jpg');
-    background-size: cover;
-    background-position: center;
-    position: relative;
+.content-section {
+    margin-bottom: 40px;
+}
+
+.title {
+    font-size: 2em;
+    color: #b4a41d;
+    font-family: Verdana, sans-serif; /* Cambiado a Verdana */
+}
+
+.text {
+    font-size: 1.2em;
+    line-height: 1.5;
+    font-family: Georgia, serif; /* Cambiado a Georgia */
+}
+
+hr {
+    border: none;
+    border-top: 1px solid #ffffff;
+    margin: 20px 0;
+}
+
+/* Footer */
+footer a img {
+    width: 50px; 
+    height: auto; 
 }
 
 footer p {
@@ -70,10 +106,11 @@ footer p {
 }
 
 footer a {
+    color: #1d9cf1;
+    text-decoration: none;
     margin: 0 5px;
 }
 
-footer a img {
-    width: 50px;
-    height: auto;
+footer a:hover {
+    text-decoration: underline;
 }
